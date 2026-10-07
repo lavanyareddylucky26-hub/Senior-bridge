@@ -1,40 +1,28 @@
-function validateBooking() {
+// Senior Bridge - N. Lavanya
+window.onload = function () {
+    console.log("Welcome to Senior Bridge!");
+};
 
-    let name = document.getElementById("name").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-    let service = document.getElementById("service").value;
-    let date = document.getElementById("date").value;
 
-    if (name === "" || phone === "" || service === "" || date === "") {
-        alert("Please fill all required fields.");
-        return false;
-    }
-
-    if (phone.length !== 10 || isNaN(phone)) {
-        alert("Please enter a valid 10-digit phone number.");
-        return false;
-    }
-
-    document.getElementById("bookingMessage").innerHTML =
-        "Booking submitted successfully!";
-
-    return false;
+// Explore button message
+function showWelcome() {
+    alert("Welcome to Senior Bridge!");
 }
 
 
-function validateContact() {
+// Smooth scroll function
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: "smooth"
+    });
+}
 
-    let name = document.getElementById("contactName").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let message = document.getElementById("message").value.trim();
 
-    if (name === "" || email === "" || message === "") {
-        alert("Please fill all fields.");
-        return false;
-    }
+// Display current year in footer
+const year = new Date().getFullYear();
 
-    document.getElementById("contactMessage").innerHTML =
-        "Thank you! Your message has been submitted.";
+const footerYear = document.getElementById("footerYear");
 
-    return false;
-        }
+if (footerYear) {
+    footerYear.textContent = year;
+}
