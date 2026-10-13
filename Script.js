@@ -1,28 +1,35 @@
-// Senior Bridge - N. Lavanya
-window.onload = function () {
-    console.log("Welcome to Senior Bridge!");
-};
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("guidanceForm");
 
+  // The other three pages do not contain a form.
+  if (!form) return;
 
-// Explore button message
-function showWelcome() {
-    alert("Welcome to Senior Bridge!");
-}
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
+    // Check that all required fields are valid.
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
 
-// Smooth scroll function
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({
-        behavior: "smooth"
-    });
-}
+    const name = document
+      .getElementById("studentName")
+      .value.trim();
 
+    const topic = document.getElementById("topic").value;
+    const message = document.getElementById("formMessage");
 
-// Display current year in footer
-const year = new Date().getFullYear();
+    // Show the confirmation message.
+    message.textContent =
+      "Thank you, " + name +
+      "! Your sample request about " + topic +
+      " has been recorded on this page. " +
+      "No data has been sent to a server.";
 
-const footerYear = document.getElementById("footerYear");
+    message.classList.add("show");
 
-if (footerYear) {
-    footerYear.textContent = year;
-}
+    // Clear the form after successful validation.
+    form.reset();
+  });
+});
