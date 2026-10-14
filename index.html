@@ -2,91 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Senior Bridge | Home</title>
-  <link rel="stylesheet" href="Style.css">
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Bridge | Connect, Learn, Grow</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <a class="logo" href="index.html">Senior<span>Bridge</span> 🌉</a>
-  <div class="nav-links">
-    <a class="active" href="index.html">Home</a>
-    <a href="destinations.html">Explore Careers</a>
-    <a href="guidance.html">Guidance</a>
-    <a href="booking.html">Contact</a>
-  </div>
-  <a class="btn btn-light" href="booking.html">Register now →</a>
-</nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      🌉 Senior <span>Bridge</span>
+    </a>
 
-<header class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Connect • Learn • Grow</p>
-    <h1>Any doubt, any college.<br>We're here for you.</h1>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#interaction">Interaction</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a href="#interaction" class="login-btn">♙ Login / Sign Up</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">CONNECT • LEARN • GROW</p>
+
+      <h1>
+        Senior - Junior<br>
+        <span>Interaction</span>
+      </h1>
+
+      <h3>Learn from Seniors, Inspire Juniors.</h3>
+      <p class="hero-text">
+        Together We Grow. Get guidance on placements, courses,
+        job vacancies, technical skills and higher studies.
+      </p>
+
+      <a href="#interaction" class="primary-btn">
+        Start Connecting &nbsp; →
+      </a>
+    </div>
+
+    <div class="hero-photo">
+      <img
+        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1100&q=85"
+        alt="College students talking and learning together">
+      <div class="photo-caption">
+        <span>🤝</span>
+        Learn Together. Grow Together.
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <p class="eyebrow">OUR PURPOSE</p>
+    <h2>Bridging the Gap Between <span>Seniors & Juniors</span></h2>
     <p>
-      Traditional college counselling can be expensive and limited.
-      Learn new skills and explore career paths with guidance from
-      seniors who can help you through your journey.
+      Senior Bridge is a student guidance platform where seniors
+      and juniors from different colleges can connect, share
+      knowledge, clarify doubts and explore career opportunities.
     </p>
-    <a class="btn" href="destinations.html">Explore Careers →</a>
-    <a class="btn btn-light" href="booking.html">Find a Senior</a>
-  </div>
-</header>
+  </section>
 
-<main class="container">
-  <section>
-    <div class="section-title">
-      <h2>Explore What You Need ✨</h2>
-      <p>Find the right direction for your future.</p>
+  <!-- Features -->
+  <section class="section features" id="features">
+    <div class="section-heading">
+      <p class="eyebrow">WHAT WE OFFER</p>
+      <h2>Our <span>Features</span></h2>
+      <p>Everything you need to take your next step with confidence.</p>
     </div>
 
     <div class="feature-grid">
       <article class="feature-card">
-        <div class="card-icon">🎓</div>
-        <h3>Courses</h3>
-        <p>Explore courses and higher studies.</p>
-        <a href="destinations.html">Explore →</a>
+        <div class="icon">👥</div>
+        <h3>Senior Mentorship</h3>
+        <p>
+          Get guidance from experienced seniors across different
+          colleges, courses and branches.
+        </p>
       </article>
 
       <article class="feature-card">
-        <div class="card-icon">💼</div>
-        <h3>Placements</h3>
-        <p>Prepare for jobs and interviews.</p>
-        <a href="destinations.html">Explore →</a>
+        <div class="icon">📚</div>
+        <h3>Knowledge Sharing</h3>
+        <p>
+          Learn about subjects, technical skills, placements,
+          career paths and higher studies.
+        </p>
       </article>
 
       <article class="feature-card">
-        <div class="card-icon">🤝</div>
-        <h3>Find Seniors</h3>
-        <p>Connect with seniors from different colleges.</p>
-        <a href="booking.html">Connect →</a>
+        <div class="icon">📅</div>
+        <h3>Events & Workshops</h3>
+        <p>
+          Discover workshops, learning sessions and interview
+          preparation activities.
+        </p>
       </article>
 
       <article class="feature-card">
-        <div class="card-icon">🌟</div>
-        <h3>Guidance</h3>
-        <p>Get support for your career journey.</p>
-        <a href="guidance.html">Learn more →</a>
+        <div class="icon">💜</div>
+        <h3>Friendly Community</h3>
+        <p>
+          Become part of a supportive community that encourages
+          students to learn and grow.
+        </p>
       </article>
     </div>
   </section>
 
-  <section style="margin-top:50px">
-    <div class="section-title">
-      <h2>Your future starts with one question 💜</h2>
-      <p>Ask, learn, improve and move forward with confidence.</p>
-      <br>
-      <a class="btn" href="booking.html">Ask for Guidance →</a>
+  <!-- Interaction -->
+  <section class="section interaction" id="interaction">
+    <div class="role-card seniors" id="mentorship">
+      <div class="role-icon">🎓</div>
+      <h2>For <span>Seniors</span></h2>
+      <p>Share your experience. Guide juniors!</p>
+      <ul>
+        <li>Mentor and inspire juniors</li>
+        <li>Share career and learning tips</li>
+        <li>Build a supportive community</li>
+      </ul>
+      <a href="#contact" class="primary-btn">Become a Mentor →</a>
+    </div>
+
+    <div class="connect-card">
+      <div class="handshake">🤝</div>
+      <h2>Connect <span>Now</span></h2>
+      <p>Bridge the Gap, Build a Better Tomorrow.</p>
+      <a href="#contact" class="primary-btn">Find a Senior Mentor →</a>
+      <a href="#contact" class="secondary-btn">Be a Junior Mentee →</a>
+      <p class="tagline">Together Towards Success ♡</p>
+    </div>
+
+    <div class="role-card juniors">
+      <div class="role-icon">🚀</div>
+      <h2>For <span>Juniors</span></h2>
+      <p>Get the right guidance. Grow faster!</p>
+      <ul>
+        <li>Ask doubts and seek advice</li>
+        <li>Explore career options</li>
+        <li>Learn from experienced seniors</li>
+      </ul>
+      <a href="#contact" class="primary-btn">Start Learning →</a>
     </div>
   </section>
-</main>
 
-<footer class="footer">
-  <strong>Senior Bridge 🌉</strong><br>
-  Bridging the gap between seniors and juniors.
-  <br>Team Collaboration Using GitHub
-</footer>
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+    <h2>Every Question Is a <span>New Beginning</span></h2>
+    <p>Connect with seniors and take a confident step toward your future.</p>
+    <a href="mailto:seniorbridge@example.com" class="primary-btn">
+      Get in Touch →
+    </a>
+    <p class="demo-note">
+      Student project demo. Replace the sample email with your
+      team's actual contact address before publishing.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="logo">🌉 Senior <span>Bridge</span></a>
+    <p>Connect &nbsp; • &nbsp; Support &nbsp; • &nbsp; Empower</p>
+    <p>Every Senior Was Once a Junior. 💜</p>
+    <p class="copyright">© 2026 Senior Bridge | Team Collaboration Using GitHub</p>
+  </footer>
 
 </body>
 </html>
