@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request Guidance | Senior Bridge</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="index.html">Senior<span>Bridge</span> 🌉</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Explore Careers</a>
+    <a href="guidance.html">Guidance</a>
+    <a class="active" href="booking.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">We're here to help</p>
+    <h1>Ask a senior.<br>Take your next step. 💌</h1>
+    <p>Tell us what you want to learn about and prepare for your future.</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="section-title">
+    <h2>Request Guidance</h2>
+    <p>Fill in the form to create your sample guidance request.</p>
+  </div>
+
+  <div class="form-layout">
+    <form class="form-box" id="guidanceForm">
+      <label for="studentName">Your Name *</label>
+      <input id="studentName" name="studentName"
+        type="text" placeholder="Enter your name" required>
+
+      <label for="college">College Name *</label>
+      <input id="college" name="college"
+        type="text" placeholder="Enter your college name" required>
+
+      <label for="email">Email Address *</label>
+      <input id="email" name="email"
+        type="email" placeholder="you@example.com" required>
+
+      <label for="topic">What guidance do you need? *</label>
+      <select id="topic" name="topic" required>
+        <option value="">Select a topic</option>
+        <option>Course Selection</option>
+        <option>Placements & Interviews</option>
+        <option>Job Vacancies</option>
+        <option>Higher Studies</option>
+        <option>Technical Skills</option>
+        <option>Resume Review</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Describe Your Doubt *</label>
+      <textarea id="message" name="message" rows="4"
+        placeholder="Tell us what you need help with..."
+        required></textarea>
+
+      <button type="submit" class="btn">
+        Submit Request ✨
+      </button>
+
+      <div id="formMessage" class="notice" role="status"
+        aria-live="polite"></div>
+    </form>
+
+    <aside class="info-box">
+      <div class="card-icon">🤝</div>
+      <h2>Let's connect!</h2>
+      <p>Senior Bridge is a student-to-student guidance platform.</p>
+      <br>
+      <h3>Our Project Team</h3>
+      <p>Lavanya — Home Page</p>
+      <p>Vani Sree — Explore Careers</p>
+      <p>Lohitha — Guidance Packages</p>
+      <p>Hemavathi — Booking & Contact</p>
+      <br>
+      <h3>Our Mission 💜</h3>
+      <p>
+        To help juniors make informed decisions about courses,
+        careers, placements and higher studies with support
+        from experienced seniors.
+      </p>
+      <br>
+      <p><strong>Note:</strong> This demo form does not send data
+      to a server or contact a mentor.</p>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  Senior Bridge 🌉 | Every doubt deserves guidance.
+</footer>
+
+</body>
+</html>
